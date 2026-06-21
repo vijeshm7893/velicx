@@ -1,0 +1,6 @@
+{
+  "name": "Velicx",
+  "description": "Velicx - Premium digital solutions, high-end websites, bespoke mobile apps, and interactive professional resume builder suite.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
