@@ -17,7 +17,7 @@ export default function Navbar() {
 
   const menuItems = [
     { label: "Our Services", href: "#services-section" },
-    { label: "Resume Builder", href: "https://resume-builder-flame-beta.vercel.app/", highlight: true, external: true },
+    { label: "Resume Builder", href: "https://resumes.apps.velicx.in/", highlight: true, external: true },
     { label: "Future Releases", href: "#coming-soon-section" },
     { label: "Contact Us", href: "#contact-us-section" }
   ];
@@ -25,15 +25,14 @@ export default function Navbar() {
   return (
     <nav
       id="main-navbar"
-      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 no-print ${
-        scrolled
+      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 no-print ${scrolled
           ? "bg-velicx-dark/85 backdrop-blur-md py-4 border-b border-white/5 shadow-lg"
           : "bg-transparent py-6 border-b border-transparent"
-      }`}
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-14">
-          
+
           {/* Velicx Brand Logo */}
           <a href="#" className="flex-shrink-0 cursor-pointer" id="logo-nav-link" aria-label="Velicx Home">
             <Logo symbolSize={38} />
@@ -47,11 +46,10 @@ export default function Navbar() {
                 href={item.href}
                 target={item.external ? "_blank" : undefined}
                 rel={item.external ? "noopener noreferrer" : undefined}
-                className={`text-sm tracking-wide font-sans font-medium relative group cursor-pointer transition-colors ${
-                  item.highlight
+                className={`text-sm tracking-wide font-sans font-medium relative group cursor-pointer transition-colors ${item.highlight
                     ? "text-white select-none whitespace-nowrap bg-gradient-to-r from-velicx-blue/10 to-velicx-purple/10 border border-velicx-indigo/30 hover:border-velicx-indigo/80 px-3.5 py-1.5 rounded-full flex items-center gap-1.5 text-xs uppercase"
                     : "text-gray-300 hover:text-white"
-                }`}
+                  }`}
               >
                 {item.highlight && <Sparkles size={11} className="text-yellow-400 shrink-0" />}
                 <span>{item.label}</span>
@@ -115,11 +113,10 @@ export default function Navbar() {
                     target={item.external ? "_blank" : undefined}
                     rel={item.external ? "noopener noreferrer" : undefined}
                     onClick={() => setIsOpen(false)}
-                    className={`p-4 rounded-xl text-base font-display font-medium border transition-all flex items-center justify-between ${
-                      item.highlight
+                    className={`p-4 rounded-xl text-base font-display font-medium border transition-all flex items-center justify-between ${item.highlight
                         ? "bg-gradient-to-r from-velicx-blue/10 to-velicx-purple/10 border-velicx-indigo/30 text-white"
                         : "bg-white/5 border-transparent text-gray-300 hover:bg-white/10"
-                    }`}
+                      }`}
                   >
                     <div className="flex items-center gap-2">
                       {item.highlight && <Sparkles size={16} className="text-yellow-400" />}
