@@ -38,7 +38,7 @@ export default function ResumeBuilder() {
 
   return (
     <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24" id="resume-builder-section">
-      
+
       {/* Header Introduction */}
       <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
         <motion.div
@@ -49,7 +49,7 @@ export default function ResumeBuilder() {
         >
           <Sparkles size={12} className="text-amber-400 animate-pulse" /> Executive Tool Released
         </motion.div>
-        
+
         <motion.h2
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -59,7 +59,7 @@ export default function ResumeBuilder() {
         >
           Portfolio Resume Builder
         </motion.h2>
-        
+
         <motion.p
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -73,7 +73,7 @@ export default function ResumeBuilder() {
 
       {/* Main Bridge Launching Pad Card */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch select-none">
-        
+
         {/* Left Side: Highlight list & Call to Action */}
         <motion.div
           initial={{ opacity: 0, x: -20 }}
@@ -84,7 +84,7 @@ export default function ResumeBuilder() {
         >
           {/* Subtle accent glow behind left panel */}
           <div className="absolute top-0 left-0 w-32 h-32 bg-velicx-blue/10 rounded-full filter blur-3xl pointer-events-none" />
-          
+
           <div className="space-y-6">
             <div className="flex items-center gap-2.5">
               <span className="p-1 px-2.5 bg-velicx-indigo/20 border border-velicx-indigo/30 rounded text-[9px] font-mono font-bold text-white uppercase tracking-wider">
@@ -99,7 +99,7 @@ export default function ResumeBuilder() {
             <h3 className="text-2xl sm:text-3xl font-display font-medium text-white tracking-tight">
               Craft beautiful modern PDFs with zero layout distortion.
             </h3>
-            
+
             <p className="text-gray-400 text-xs sm:text-sm leading-relaxed">
               Tailored for software engineers, product architects, and technology leads. Feed your credentials into the interactive engine and download compliant, minimalist document templates optimized for modern applicant tracking networks.
             </p>
@@ -123,11 +123,11 @@ export default function ResumeBuilder() {
               <div className="flex items-center gap-1.5 text-[10px] font-mono tracking-widest text-gray-500 uppercase font-bold">
                 <Monitor size={11} className="text-gray-400" /> Standalone Client Space
               </div>
-              <p className="text-xs font-medium text-white">resume-builder-flame-beta.vercel.app</p>
+              <p className="text-xs font-medium text-white">resume.velicx.in</p>
             </div>
 
             <a
-              href="https://resume-builder-flame-beta.vercel.app/"
+              href="https://https://resume.velicx.in/"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full sm:w-auto px-6 py-3.5 bg-gradient-to-r from-velicx-blue to-velicx-indigo text-white hover:opacity-90 text-xs font-bold rounded-xl flex items-center justify-center gap-2 transition-all shadow-lg cursor-pointer transform hover:-translate-y-0.5"

@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Block crawling of build artifacts and source maps if any
+Disallow: /*.map$
+
+# Sitemap location
+Sitemap: https://velicx.in/sitemap.xml

@@ -5,14 +5,14 @@ import ComingSoon from "./components/ComingSoon";
 import ContactForm from "./components/ContactForm";
 import PolicyModals from "./components/PolicyModals";
 import Logo from "./components/Logo";
-import { 
-  Monitor, 
-  Smartphone, 
-  Sparkles, 
-  Cpu, 
-  ArrowRight, 
-  ShieldCheck, 
-  Code, 
+import {
+  Monitor,
+  Smartphone,
+  Sparkles,
+  Cpu,
+  ArrowRight,
+  ShieldCheck,
+  Code,
   Heart,
   ChevronRight,
   ExternalLink,
@@ -38,7 +38,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-velicx-dark text-gray-100 flex flex-col justify-between font-sans relative antialiased selection:bg-velicx-indigo/30 selection:text-white overflow-x-hidden">
-      
+
       {/* GLOW ATMOSPHERE - Soft ambient gradients scattered in the backdrop */}
       <div className="absolute top-0 left-1/4 w-[400px] h-[400px] bg-velicx-blue/10 rounded-full filter blur-[100px] pointer-events-none no-print" />
       <div className="absolute top-[800px] right-1/4 w-[500px] h-[500px] bg-velicx-purple/10 rounded-full filter blur-[120px] pointer-events-none no-print" />
@@ -54,7 +54,7 @@ export default function App() {
         <section className="relative overflow-hidden pt-12 pb-20 md:pt-20 md:pb-28 border-b border-white/5 no-print" id="hero-unit">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center space-y-8">
             {/* Launching Capsule Badge */}
-            <motion.div 
+            <motion.div
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5 }}
@@ -66,7 +66,7 @@ export default function App() {
 
             {/* Main Headline */}
             <div className="space-y-4 max-w-4xl mx-auto">
-              <motion.h1 
+              <motion.h1
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
@@ -77,8 +77,8 @@ export default function App() {
                   Bold Modern Brands
                 </span>
               </motion.h1>
-              
-              <motion.p 
+
+              <motion.p
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
@@ -89,14 +89,14 @@ export default function App() {
             </div>
 
             {/* Quick Actions Panel */}
-            <motion.div 
+            <motion.div
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.3 }}
               className="flex flex-col sm:flex-row justify-center items-center gap-3 w-full max-w-md mx-auto"
             >
               <a
-                href="https://resume-builder-flame-beta.vercel.app/"
+                href="https://resume.velicx.in/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto px-6 py-3.5 bg-white text-velicx-dark hover:bg-white/90 text-sm font-semibold rounded-xl flex items-center justify-center gap-2 transition-all shadow-md shrink-0 cursor-pointer animate-shimmer"
@@ -116,7 +116,7 @@ export default function App() {
             </motion.div>
 
             {/* Trust Coordinates badges */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.4 }}
@@ -145,7 +145,7 @@ export default function App() {
         {/* COMPREHENSIVE CORE SERVICES SHOWCASE GRID */}
         <section className="py-20 md:py-28 border-b border-white/5 no-print" id="services-section">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            
+
             {/* Section Header */}
             <div className="max-w-3xl mx-auto text-center mb-16 space-y-4">
               <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-velicx-blue/15 border border-velicx-blue/20 rounded-full text-xs font-mono font-medium text-velicx-blue uppercase tracking-wider">
@@ -161,7 +161,7 @@ export default function App() {
 
             {/* Core comparative Services Grid */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-              
+
               {/* SERVICE 1: CUSTOM WEBSITES FOR YOUR BRAND */}
               <div className="bg-velicx-card border border-white/5 hover:border-white/10 rounded-3xl p-6 sm:p-10 space-y-8 relative group transition-all duration-300">
                 <div className="absolute top-0 right-0 h-32 w-32 bg-velicx-blue/5 rounded-full filter blur-3xl pointer-events-none" />
@@ -282,15 +282,15 @@ export default function App() {
                 {/* Premium Interactive Element: Mobile Phone Screen simulation */}
                 <div className="p-4 bg-velicx-dark/80 rounded-2xl border border-white/5 flex flex-col items-center shadow-inner" id="mobile-interact-mock">
                   <p className="text-xs text-slate-400 font-semibold mb-3">Live Interactive Mock (Tap screens below)</p>
-                  
+
                   {/* Phone Screen Case */}
                   <div className="w-[180px] h-[260px] bg-black border-[6px] border-slate-800 rounded-3xl p-3 shadow-xl relative overflow-hidden flex flex-col justify-between">
                     {/* Speaker notch */}
                     <div className="absolute top-1 left-1/2 transform -translate-x-1/2 w-14 h-3 bg-slate-800 rounded-full" />
-                    
+
                     {/* Screens Engine */}
                     <div className="flex-1 mt-3 flex flex-col justify-between text-left select-none text-[10px]">
-                      
+
                       {mobileMockScreen === "onboarding" && (
                         <div className="flex flex-col justify-center items-center text-center h-full space-y-2">
                           <div className="px-2 py-0.5 bg-velicx-indigo/35 text-[8px] font-mono rounded text-indigo-300">Velicx Mobile</div>
@@ -363,12 +363,12 @@ export default function App() {
         </section>
 
         {/* FUTURE SERVICE RELEASES SECTION (COMING SOON) */}
-        <section className="bg-velicx-card/30 border-b border-white/5 no-print" id="launches-hub">
+        <section className="bg-velicx-card/30 border-b border-white/5 no-print" id="coming-soon-section">
           <ComingSoon />
         </section>
 
         {/* COMPLIANT CONTACT US CORE INTAKE */}
-        <section className="bg-velicx-dark/50 no-print" id="contact-hub">
+        <section className="bg-velicx-dark/50 no-print" id="contact-us-section">
           <ContactForm />
         </section>
 
@@ -377,7 +377,7 @@ export default function App() {
       {/* FOOTER & POLICY PORTALS */}
       <footer className="bg-velicx-dark py-12 border-t border-white/5 font-sans relative z-10 select-none">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left space-y-8">
-          
+
           <div className="flex flex-col sm:flex-row justify-between items-center gap-6 pb-8 border-b border-white/5">
             {/* Velicx Brand */}
             <div className="space-y-2">
@@ -390,7 +390,7 @@ export default function App() {
             {/* Email mailto fallback as required by prompt */}
             <div className="flex flex-col sm:items-end text-sm text-gray-400 space-y-1">
               <p className="text-[10px] uppercase font-mono tracking-widest text-gray-500 font-bold">Contact Coordinates</p>
-              <a 
+              <a
                 href="mailto:tech.velicx@gmail.com"
                 className="text-white hover:text-velicx-blue font-mono font-medium hover:underline flex items-center justify-center sm:justify-start gap-1.5"
                 id="footer-mailto-link"
