@@ -1,8 +1,17 @@
+# https://velicx.in/robots.txt
 User-agent: *
 Allow: /
 
-# Block crawling of build artifacts and source maps if any
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Block source maps only
 Disallow: /*.map$
 
-# Sitemap location
 Sitemap: https://velicx.in/sitemap.xml
